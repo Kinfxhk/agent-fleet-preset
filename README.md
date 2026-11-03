@@ -1,5 +1,8 @@
 # agent-fleet-preset
 
+
+**[☕ Buy Me a Coffee](https://buymeacoffee.com/kinfxhk)** · [GitHub Sponsors](https://github.com/sponsors/Kinfxhk)
+
 **狀態：M0 scaffold（白標 Fleet 起步：預設插件清單＋主題佔位＋teams）——不是完整編排引擎，亦不像素抄任何商業 Bot UI。**
 
 KINFX **L4** 白標 Fleet 預設：一個 resolve-wrap、teams 起步、主題 stub。  
