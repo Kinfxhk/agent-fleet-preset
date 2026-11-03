@@ -1,0 +1,16 @@
+{
+  "name": "agent-fleet-preset",
+  "version": "0.0.1",
+  "private": true,
+  "description": "KINFX M0 white-label fleet starter: preset plugins, theme placeholder, teams starter (no commercial Bot UI clone).",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "health": "node scripts/health-check.mjs",
+    "healthcheck": "node scripts/health-check.mjs",
+    "install:preset": "node scripts/install-preset.mjs",
+    "uninstall:preset": "node scripts/install-preset.mjs --uninstall"
+  }
+}

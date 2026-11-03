@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Fleet theme placeholder">
+  <rect width="640" height="360" fill="#0f1419"/>
+  <rect x="24" y="24" width="592" height="48" rx="8" fill="#1a2332" stroke="#3d4f66"/>
+  <text x="40" y="54" fill="#8b9cb3" font-family="system-ui,sans-serif" font-size="18">agent-fleet-preset · theme placeholder</text>
+  <rect x="24" y="96" width="180" height="240" rx="8" fill="#1a2332" stroke="#3d4f66"/>
+  <rect x="220" y="96" width="396" height="240" rx="8" fill="#121820" stroke="#3d4f66"/>
+  <text x="240" y="140" fill="#c5d0de" font-family="system-ui,sans-serif" font-size="16">White-label fleet starter (M0)</text>
+  <text x="240" y="168" fill="#8b9cb3" font-family="system-ui,sans-serif" font-size="14">Not a commercial Bot UI clone</text>
+  <text x="240" y="196" fill="#8b9cb3" font-family="system-ui,sans-serif" font-size="14">Host pin: dsh@0.2.1-rc.5</text>
+  <text x="240" y="224" fill="#8b9cb3" font-family="system-ui,sans-serif" font-size="14">Resolve-wrap: exactly one (key-fallback)</text>
+  <circle cx="114" cy="180" r="36" fill="none" stroke="#5b7cfa" stroke-width="3"/>
+  <text x="114" y="186" text-anchor="middle" fill="#5b7cfa" font-family="system-ui,sans-serif" font-size="12">Fleet</text>
+</svg>

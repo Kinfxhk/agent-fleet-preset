@@ -1,0 +1,50 @@
+{
+  "name": "agent-fleet-preset/default",
+  "description": "M0 white-label fleet starter for DSH 0.2.1-rc.5 (exactly one resolve-wrap)",
+  "host": { "package": "@deepseek-ai/dsh", "version": "0.2.1-rc.5" },
+  "profile": "web",
+  "theme": {
+    "placeholder": true,
+    "doc": "docs/theme-placeholder.md",
+    "image": "docs/images/fleet-placeholder.svg"
+  },
+  "resolveWrap": {
+    "default": "@omdp/dsh-key-fallback",
+    "optionalAlternatives": [
+      {
+        "package": "@goodandready/dsh-key-rotation",
+        "note": "Install INSTEAD of key-fallback, never both (dual-wrap risk)."
+      }
+    ],
+    "policy": "exactly-one"
+  },
+  "plugins": [
+    { "package": "dsh-soul-md", "role": "soul-md", "required": true },
+    { "package": "@omdp/dsh-key-fallback", "role": "resolve-wrap", "required": true },
+    { "package": "dsh-llm-fallbacks", "role": "model-fallback", "required": true },
+    { "package": "@nanmicoder/dsh-agent-teams", "role": "teams", "required": true }
+  ],
+  "doNotInstall": [
+    { "package": "dsh-subagent-progress", "reason": "Incompatible with dsh 0.2.1-rc.5; use agent-progress-dock research / teams interim — never productize allow-version" },
+    { "package": "dsh-bridges", "reason": "Incompatible with dsh 0.2.1-rc.5" },
+    { "package": "@goodandready/dsh-key-rotation", "reason": "Optional alternative only; not co-installed with key-fallback" }
+  ],
+  "references": {
+    "kinfxRepos": [
+      { "name": "agent-home-recipes", "pathHint": "/workspace/oss/agent-home-recipes", "role": "L0 profile recipes / health" },
+      { "name": "agent-quota-router", "pathHint": "/workspace/oss/agent-quota-router", "role": "L2 quota config contract (no engine claim beyond its README)" },
+      { "name": "agent-soul-pack", "pathHint": "/workspace/oss/agent-soul-pack", "role": "L1 soul/user/agent templates" },
+      { "name": "agent-progress-dock", "pathHint": "/workspace/oss/agent-progress-dock", "role": "L3 progress follow/fork notes (may be WIP)" }
+    ],
+    "npm": [
+      "dsh-soul-md",
+      "@omdp/dsh-key-fallback",
+      "dsh-llm-fallbacks",
+      "@nanmicoder/dsh-agent-teams"
+    ]
+  },
+  "policies": {
+    "banDualResolveWrap": true,
+    "banAllowVersionInProduct": true
+  }
+}
