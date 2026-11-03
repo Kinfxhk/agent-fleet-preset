@@ -1,6 +1,6 @@
 # agent-fleet-preset
 
-**狀態：M0 scaffold（白標 Fleet 起步：預設插件清單＋主題佔位＋teams）——唔係完整編排引擎，亦唔像素抄任何商業 Bot UI。**
+**狀態：M0 scaffold（白標 Fleet 起步：預設插件清單＋主題佔位＋teams）——不是完整編排引擎，亦不像素抄任何商業 Bot UI。**
 
 KINFX **L4** 白標 Fleet 預設：一個 resolve-wrap、teams 起步、主題 stub。  
 **同 DeepSeek、xAI 或其他 LLM 廠商無隸屬關係。** Not affiliated with DeepSeek, xAI, or other LLM vendors. 技術段可寫「相容 DSH（DeepSeek Harness）」。
@@ -44,8 +44,8 @@ flowchart TB
 | Resolve-wrap（**只一個**） | `@omdp/dsh-key-fallback` | 禁雙 wrap |
 | Model 降級 | `dsh-llm-fallbacks` | |
 | Teams | `@nanmicoder/dsh-agent-teams` | activity／teams 起步 |
-| Progress | （唔入預設） | optional／interim：`agent-progress-dock`；**禁**產品化 `allow-version` |
-| 可選替代 wrap | `@goodandready/dsh-key-rotation` | **代替** key-fallback，唔並裝 |
+| Progress | （不入預設） | optional／interim：`agent-progress-dock`；**禁**產品化 `allow-version` |
+| 可選替代 wrap | `@goodandready/dsh-key-rotation` | **代替** key-fallback，不並裝 |
 | 禁裝 | `dsh-subagent-progress`、`dsh-bridges` | 對 0.2.1-rc.5 不相容 |
 
 詳見 [`profiles/default/COMPATIBILITY.md`](profiles/default/COMPATIBILITY.md) · [`docs/theme-placeholder.md`](docs/theme-placeholder.md)
@@ -67,7 +67,7 @@ npm run install:preset -- --apply   # 需要 dsh + DSH_HOME
 npm run healthcheck -- --dry
 ```
 
-金鑰只放 `$DSH_HOME/.credentials.yaml`。本庫只有空嘅 [`.env.example`](.env.example)。
+金鑰只放 `$DSH_HOME/.credentials.yaml`。本庫只有空的 [`.env.example`](.env.example)。
 
 ### 卸載
 
@@ -85,8 +85,8 @@ npm run healthcheck -- --dry
 
 ## 合規
 
-唔像素抄任何商業 Bot UI。公開產品名避裸 DeepSeek／Grok 品牌。  
-多帳／多 key 自動輪換可能受供應商 ToS 限制——正式使用前開頁核實；本專案**唔**提供繞過步驟，亦**唔**建議 `allow-version` 當產品預設。
+不像素抄任何商業 Bot UI。公開產品名避裸 DeepSeek／Grok 品牌。  
+多帳／多 key 自動輪換可能受供應商 ToS 限制——正式使用前開頁核實；本專案**不**提供繞過步驟，亦**不**建議 `allow-version` 當產品預設。
 
 *Not legal advice; users must comply with each provider’s Terms/AUP; no secrets in git.*
 
